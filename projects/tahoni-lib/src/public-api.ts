@@ -3,3 +3,6 @@
  */
 
 export * from './lib/tahoni-lib.module';
+
+export * from './lib/copyright/copyright.module';
+export * from './lib/copyright/copyright.component';

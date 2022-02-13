@@ -1,17 +1,15 @@
 import { Injectable, OnInit } from '@angular/core';
 import { IconService } from '../utils/icon.service';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import { AppConstantsService } from '../utils/app-constants.service';
+import { AppConstants } from '../shared/app-constants';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CopyrightService implements OnInit {
-  private appConstants: AppConstantsService;
   private iconService: IconService;
 
-  constructor(appConstants: AppConstantsService, iconService: IconService) {
-    this.appConstants = appConstants;
+  constructor(iconService: IconService) {
     this.iconService = iconService;
   }
 
@@ -26,6 +24,6 @@ export class CopyrightService implements OnInit {
   }
 
   get copyrightText(): string {
-    return this.appConstants.tahoniText;
+    return AppConstants.tahoniText;
   }
 }

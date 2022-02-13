@@ -1,5 +1,5 @@
 {
-  "name": "tahoni-lib",
+  "name": "@tahoni/tahoni-lib",
   "version": "1.0.3",
   "scripts": {
     "ng": "ng",
@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~13.2.0",
     "@angular/common": "~13.2.0",

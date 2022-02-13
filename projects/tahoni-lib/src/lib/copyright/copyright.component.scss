@@ -1,0 +1,21 @@
+/* Global styling */
+@import "../../assets/css/colors";
+
+/* Component-specific styling */
+:host {
+  display: block;
+}
+
+.copyright-text {
+  font-size: 1rem;
+}
+
+/* Colours */
+.copyright-icon, .copyright-text {
+  color: $tahoni-color;
+}
+
+/* Icons */
+.copyright-icon:first-child {
+  font-size: 2rem;
+}

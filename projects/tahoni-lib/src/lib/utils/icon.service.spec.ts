@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { TahoniLibService } from './tahoni-lib.service';
+import { IconService } from './icon.service';
 
-describe('TahoniLibService', () => {
-  let service: TahoniLibService;
+describe('IconService', () => {
+  let service: IconService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(TahoniLibService);
+    service = TestBed.inject(IconService);
   });
 
   it('should be created', () => {

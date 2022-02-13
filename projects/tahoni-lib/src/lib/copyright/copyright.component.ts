@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CopyrightService } from './copyright.service';
 
 @Component({
@@ -6,10 +6,12 @@ import { CopyrightService } from './copyright.service';
   templateUrl: './copyright.component.html',
   styleUrls: ['./copyright.component.scss'],
 })
-export class CopyrightComponent {
+export class CopyrightComponent implements OnInit {
   copyrightService: CopyrightService;
 
   constructor(copyrightService: CopyrightService) {
     this.copyrightService = copyrightService;
   }
+
+  ngOnInit(): void {}
 }

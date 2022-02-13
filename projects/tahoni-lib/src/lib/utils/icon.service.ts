@@ -6,17 +6,16 @@ import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
   providedIn: 'root',
 })
 export class IconService {
+  private _tahoniIcons = [faCat, faMouse];
+  private _copyrightIcon = faCopyright;
+
   constructor() {}
 
   get tahoniIcons(): IconDefinition[] {
     return this._tahoniIcons;
   }
 
-  private _tahoniIcons = [faCat, faMouse];
-
   get copyrightIcon(): IconDefinition {
     return this._copyrightIcon;
   }
-
-  private _copyrightIcon = faCopyright;
 }

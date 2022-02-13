@@ -4,11 +4,11 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class AppConstantsService {
+  private readonly _tahoniText = 'tahoni';
+
   constructor() {}
 
   get tahoniText(): string {
     return this._tahoniText;
   }
-
-  private _tahoniText = 'tahoni';
 }

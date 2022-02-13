@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CopyrightService } from './copyright.service';
 
 @Component({
-  selector: 'lib-copyright',
+  selector: 'tahoni-lib-copyright',
   templateUrl: './copyright.component.html',
   styleUrls: ['./copyright.component.scss'],
 })

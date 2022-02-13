@@ -7,16 +7,24 @@ import { IconService } from './utils/icon.service';
 import { SanitizeService } from './utils/sanitize.service';
 import { ValidateService } from './validation/validate.service';
 import { AlertService } from './message/alert.service';
-import { CopyrightModule } from './copyright/copyright.module';
+import { CopyrightComponent } from './copyright/copyright.component';
+import { CopyrightService } from './copyright/copyright.service';
 
 @NgModule({
   declarations: [
+    CopyrightComponent,
     FocusOnErrorDirective,
     SummaryOnErrorDirective,
     TouchOnErrorDirective,
   ],
-  providers: [IconService, SanitizeService, ValidateService, AlertService],
-  imports: [FontAwesomeModule, CopyrightModule],
-  exports: [],
+  providers: [
+    CopyrightService,
+    IconService,
+    SanitizeService,
+    ValidateService,
+    AlertService,
+  ],
+  imports: [FontAwesomeModule],
+  exports: [CopyrightComponent],
 })
 export class TahoniLibModule {}

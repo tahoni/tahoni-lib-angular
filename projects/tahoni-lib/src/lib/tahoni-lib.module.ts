@@ -9,6 +9,7 @@ import { ValidateService } from './validation/validate.service';
 import { AlertService } from './message/alert.service';
 import { CopyrightComponent } from './copyright/copyright.component';
 import { CopyrightService } from './copyright/copyright.service';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { CopyrightService } from './copyright/copyright.service';
     ValidateService,
     AlertService,
   ],
-  imports: [FontAwesomeModule],
+  imports: [FontAwesomeModule, CommonModule],
   exports: [CopyrightComponent],
 })
 export class TahoniLibModule {}

@@ -1,11 +1,16 @@
 {
   "name": "tahoni-lib",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "peerDependencies": {
     "@angular/common": "^13.2.0",
     "@angular/core": "^13.2.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
+  },
+  "exports": {
+    "./colors": {
+      "sass": "./assets/css/_colors.scss"
+    }
   }
 }

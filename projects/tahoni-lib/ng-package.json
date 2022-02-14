@@ -1,7 +1,11 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
   "dest": "../../dist/tahoni-lib",
+  "assets": [
+    "./assets/**/*.*"
+  ],
   "lib": {
-    "entryFile": "src/public-api.ts"
+    "entryFile": "src/public-api.ts",
+    "cssUrl": "inline"
   }
 }

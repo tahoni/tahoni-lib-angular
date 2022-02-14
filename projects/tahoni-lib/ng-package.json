@@ -2,7 +2,7 @@
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
   "dest": "../../dist/tahoni-lib",
   "assets": [
-    "./assets/**/*.*",
+    "./assets/**/*.scss",
     "./.npmrc"
   ],
   "lib": {

@@ -1,8 +1,14 @@
+@import "./../../../assets/css/fonts";
 @import "./../../../assets/css/colors";
 
 /* Component */
 :host {
   display: block;
+}
+
+/* Font Family */
+:host {
+  font-family: $tahoni-sans-serif;
 }
 
 /* Text */

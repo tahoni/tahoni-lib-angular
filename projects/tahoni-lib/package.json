@@ -1,6 +1,6 @@
 {
   "name": "@tahoni/tahoni-lib",
-  "version": "1.1.1",
+  "version": "1.1.3",
   "author": "Leoni Lubbinge <tahoni@gmail.com> (https://www.tahoni.info)",
   "peerDependencies": {
     "@angular/common": "^13.2.0",

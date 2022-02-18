@@ -7,11 +7,15 @@ import { CopyrightService } from './copyright.service';
   styleUrls: ['./copyright.component.scss'],
 })
 export class CopyrightComponent implements OnInit {
-  copyrightService: CopyrightService;
+  private readonly _copyrightService: CopyrightService;
 
   constructor(copyrightService: CopyrightService) {
-    this.copyrightService = copyrightService;
+    this._copyrightService = copyrightService;
   }
 
   ngOnInit(): void {}
+
+  get copyrightService(): CopyrightService {
+    return this._copyrightService;
+  }
 }

@@ -26,6 +26,11 @@ import { CommonModule } from '@angular/common';
     AlertService,
   ],
   imports: [FontAwesomeModule, CommonModule],
-  exports: [CopyrightComponent],
+  exports: [
+    CopyrightComponent,
+    FocusOnErrorDirective,
+    SummaryOnErrorDirective,
+    TouchOnErrorDirective,
+  ],
 })
 export class TahoniLibModule {}

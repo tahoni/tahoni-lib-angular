@@ -7,11 +7,11 @@ import * as sanitizeHtml from 'sanitize-html';
 export class SanitizeService {
   constructor() {}
 
-  cleanHtml(source: string): string {
+  cleanHtml = (source: string): string => {
     return sanitizeHtml(source, {
       allowedTags: [],
       allowedAttributes: {},
       disallowedTagsMode: 'discard',
     });
-  }
+  };
 }

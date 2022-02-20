@@ -7,11 +7,10 @@ import Swal from 'sweetalert2';
 export class AlertService {
   constructor() {}
 
-  alertSuccess(message: string) {
+  alertSuccess = (message: string) => {
     Swal.fire('Success', message, 'success').then();
-  }
-
-  alertError(message: string) {
+  };
+  alertError = (message: string) => {
     Swal.fire('Error', message, 'error').then();
-  }
+  };
 }

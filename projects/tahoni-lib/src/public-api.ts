@@ -10,7 +10,6 @@ export * from './lib/copyright/copyright.component';
 /* Directives */
 export * from './lib/validation/focus-on-error.directive';
 export * from './lib/validation/summary-on-error.directive';
-export * from './lib/validation/touch-on-error.directive';
 
 /* Services */
 export * from './lib/utils/icon.service';

@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { FocusOnErrorDirective } from './validation/focus-on-error.directive';
 import { SummaryOnErrorDirective } from './validation/summary-on-error.directive';
-import { TouchOnErrorDirective } from './validation/touch-on-error.directive';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { IconService } from './utils/icon.service';
 import { SanitizeService } from './utils/sanitize.service';
@@ -16,7 +15,6 @@ import { CommonModule } from '@angular/common';
     CopyrightComponent,
     FocusOnErrorDirective,
     SummaryOnErrorDirective,
-    TouchOnErrorDirective,
   ],
   providers: [
     CopyrightService,
@@ -26,11 +24,6 @@ import { CommonModule } from '@angular/common';
     AlertService,
   ],
   imports: [FontAwesomeModule, CommonModule],
-  exports: [
-    CopyrightComponent,
-    FocusOnErrorDirective,
-    SummaryOnErrorDirective,
-    TouchOnErrorDirective,
-  ],
+  exports: [CopyrightComponent, FocusOnErrorDirective, SummaryOnErrorDirective],
 })
 export class TahoniLibModule {}

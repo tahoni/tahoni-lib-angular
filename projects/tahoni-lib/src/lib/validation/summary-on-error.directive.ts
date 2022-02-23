@@ -27,26 +27,37 @@ export class SummaryOnErrorDirective {
     let validationMessage = '';
 
     // Find all invalid controls
-    const invalidControls = Object.values(this.form.controls).filter(
-      (control) => control.invalid
+    const invalidControls = Object.keys(this.form.controls).filter(
+      (it) => this.form.controls[it].invalid
     );
     // Build the list of validation messages for all invalid controls
     for (const invalidControl of invalidControls) {
-      // Find the validation message for the control
-      const invalidMessage =
-        this.validateService.getValidationMessage(invalidControl);
-      // Style the validation message for the control
-      const invalidHtmlMessage =
-        invalidControl.value.label +
-        '<span style="color: red">' +
-        invalidMessage +
-        '</span><br/>';
-      validationMessage += invalidHtmlMessage;
+      // Find the native element of the control
+      const element = document.getElementById(invalidControl);
+
+      // Get the validation message for the control
+      if (element) {
+        const invalidMessage =
+          this.validateService.getValidationMessage(element);
+        const elementLabel = document.querySelector(
+          "label[for='" + invalidControl + "']"
+        );
+        // Style the validation message for the control
+        const invalidHtmlMessage =
+          (elementLabel ? elementLabel.textContent + ': ' : '') +
+          '<span style="color: red">' +
+          invalidMessage +
+          '</span><br/>';
+        validationMessage += invalidHtmlMessage;
+      }
     }
 
     // Display the list of validation messages for all invalid controls
     if (validationMessage) {
-      invalidControls[0].value.focus();
+      const element = document.getElementById(invalidControls[0]);
+      if (element) {
+        element.focus();
+      }
       validationMessage =
         'Please fix the following errors:<br/>' + validationMessage;
       this.alertService.alertError(validationMessage);

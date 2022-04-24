@@ -32,20 +32,20 @@ project's [Issues](https://github.com/tahoni/tahoni-lib/issues) page.<br>
 A high-level structure of the project (generated using the tree command).
 
 ```text
-+---projects
-    +---tahoni-lib
-        +---assets
-        ¦   +---css
-        ¦   +---img
-        ¦       +---icons
-        ¦       +---logos
-        +---src
-            +---lib
-                +---copyright
-                +---message
-                +---shared
-                +---utils
-                +---validation
+└───projects
+    └───tahoni-lib
+        ├───assets
+        │   ├───css
+        │   └───img
+        │       ├───icons
+        │       └───logos
+        └───src
+            └───lib
+                ├───copyright
+                ├───message
+                ├───shared
+                ├───utils
+                └───validation
 ```
 
 ## Instructions

@@ -5,6 +5,9 @@
   "peerDependencies": {
     "@angular/common": "^15.2.3",
     "@angular/core": "^15.2.3",
+    "@fortawesome/angular-fontawesome": "^0.12.1",
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/free-solid-svg-icons": "^6.3.0",
     "sanitize-html": "^2.10.0",
     "sweetalert2": "^11.4.8"
   },

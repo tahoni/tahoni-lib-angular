@@ -63,11 +63,11 @@ use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 **Build**
 
-Run `ng build` to build the project. The build artefacts will be stored in the `dist/` directory.
+Run `ng build tahoni-lib` to build the project. The build artefacts will be stored in the `dist/` directory.
 
 **Publish**
 
-Run `ng publish` from the `dist/` directory to publish the project. Remember to add a .npmrc file and not to check it
+Run `npm publish` from the `dist/` directory to publish the project. Remember to add a .npmrc file and not to check it
 in.
 
 **Running unit tests**
